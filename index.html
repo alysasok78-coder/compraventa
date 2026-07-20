@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO ON-PAGE Y TÉCNICO -->
+    <title>Compra Y Venta JHS | Motos Nuevas y Usadas en Sogamoso</title>
+    <meta name="description" content="Compra y venta de motos nuevas y usadas en Sogamoso, Colombia. Trámites legales garantizados, peritaje técnico y precios justos. ¡Cotiza tu moto hoy!">
+    <meta name="keywords" content="compra de motos Sogamoso, venta de motos usadas, motos nuevas Sogamoso, compraventa de motocicletas, Compra Y Venta JHS">
+    <meta name="author" content="NOELIA YASMIN PIRAGAUTA PRIETO">
+    <meta name="robots" content="index, follow">
+    
+    <!-- SEO OFF-PAGE (Etiquetas Open Graph para redes sociales) -->
+    <meta property="og:title" content="Compra Y Venta JHS | Tu próxima moto en Sogamoso">
+    <meta property="og:description" content="Encuentra la motocicleta ideal o vende la tuya con total respaldo legal y mecánico en Sogamoso.">
+    <meta property="og:type" content="website">
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* VARIABLES DE DISEÑO (Estilo automotriz/motos) */
+        :root {
+            --primary-color: #d32f2f; /* Rojo motor */
+            --dark-bg: #121212;
+            --dark-card: #1e1e1e;
+            --text-light: #f5f5f5;
+            --text-muted: #b0b0b0;
+            --white: #ffffff;
+        }
+
+        /* RESET Y ESTILOS GLOBALES */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; color: var(--text-light); background-color: var(--dark-bg); line-height: 1.6; }
+        h1, h2, h3 { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* BOTÓN CTA */
+        .btn-cta {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+            text-align: center;
+        }
+        .btn-cta:hover { background-color: #b71c1c; transform: translateY(-2px); }
+
+        /* HEADER */
+        header { background-color: var(--dark-card); border-bottom: 3px solid var(--primary-color); padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .logo { font-size: 24px; font-weight: 700; font-family: 'Oswald', sans-serif; }
+        .logo span { color: var(--primary-color); }
+        .header-contact { font-size: 14px; font-weight: 700; }
+
+        /* HERO SECTION */
+        .hero { 
+            background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.9)), url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            padding: 120px 20px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; letter-spacing: 1px; }
+        .hero p { font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 30px auto; }
+
+        /* SECCIONES Y GRID */
+        .section-pad { padding: 80px 0; }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 50px; color: var(--white); }
+        .section-title span { color: var(--primary-color); }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
+
+        /* TARJETAS (BENEFICIOS Y SERVICIOS) */
+        .card { background-color: var(--dark-card); padding: 40px 30px; border-radius: 8px; text-align: center; border-top: 4px solid transparent; transition: transform 0.3s, border-color 0.3s; }
+        .card:hover { transform: translateY(-5px); border-top-color: var(--primary-color); }
+        .card h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--white); }
+        .card p { color: var(--text-muted); }
+
+        /* COMPROMISO / TRANSPARENCIA */
+        .trust-section { background-color: var(--primary-color); padding: 50px 20px; text-align: center; border-radius: 8px; }
+        .trust-section h2 { font-size: 2rem; margin-bottom: 20px; color: var(--white); }
+        .trust-section p { font-size: 1.1rem; max-width: 800px; margin: 0 auto; color: var(--white); }
+
+        /* CONTACTO Y FORMULARIO */
+        .info-box { background-color: var(--dark-card); padding: 40px; border-radius: 8px; }
+        .info-box p { margin-bottom: 15px; display: flex; align-items: center; gap: 10px; color: var(--text-muted); }
+        .info-box strong { color: var(--white); min-width: 120px; display: inline-block; }
+        
+        .form-box { background-color: var(--dark-card); padding: 40px; border-radius: 8px; border-left: 4px solid var(--primary-color); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 700; font-size: 0.9rem; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; background-color: #2a2a2a; border: 1px solid #444; border-radius: 4px; color: var(--white); font-family: inherit; font-size: 1rem; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--primary-color); }
+        .success-message { display: none; background-color: #1b5e20; color: #fff; padding: 15px; border-radius: 4px; text-align: center; font-weight: bold; margin-top: 20px; }
+
+        /* FOOTER */
+        footer { background-color: #0a0a0a; padding: 40px 0 20px; text-align: center; border-top: 1px solid #222; }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { color: var(--text-muted); margin: 0 15px; text-decoration: underline; font-size: 0.9rem; transition: color 0.3s; }
+        .footer-links a:hover { color: var(--primary-color); }
+        .footer-copy { font-size: 0.8rem; color: #666; margin-top: 20px; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .header-content { flex-direction: column; text-align: center; }
+            .section-pad { padding: 50px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">Compra Y Venta <span>JHS</span></div>
+            <div class="header-contact">
+                📞 3012567389 | 📍 Sogamoso, Colombia
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <h1>Rueda Seguro con la Moto de tus Sueños</h1>
+                <p>Especialistas en la compraventa de motocicletas nuevas y usadas en Sogamoso. Garantizamos trámites transparentes, peritaje técnico y el mejor trato del mercado.</p>
+                <a href="#contacto" class="btn-cta">Cotiza o Vende tu Moto Hoy</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE BENEFICIOS -->
+        <section class="section-pad">
+            <div class="container">
+                <h2 class="section-title">¿Por qué elegir <span>JHS</span>?</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>Trámites Legales Seguros</h3>
+                        <p>Nos encargamos del papeleo. Verificamos antecedentes en el SIMIT y la SIJIN para garantizar que tu inversión esté libre de problemas legales y embargos.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Revisión Técnico Mecánica</h3>
+                        <p>Todas nuestras motos usadas pasan por un peritaje riguroso. Evaluamos motor, chasis y sistema eléctrico para asegurar su óptimo funcionamiento.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Precios Competitivos</h3>
+                        <p>Tasamos los vehículos basándonos en los valores reales del mercado, asegurando un precio de compra justo y facilidades de venta para ti.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROPUESTA DE VALOR / SERVICIOS -->
+        <section class="section-pad" style="background-color: #0f0f0f;">
+            <div class="container">
+                <h2 class="section-title">Nuestros <span>Servicios</span></h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>Venta de Motos Nuevas</h3>
+                        <p>Estrena la motocicleta que siempre has querido. Trabajamos con marcas reconocidas, ofreciendo garantía directa de concesionario.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Venta de Motos Usadas</h3>
+                        <p>Descubre nuestro catálogo de motos de segunda mano en excelentes condiciones, listas para traspaso inmediato en tránsito.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Compramos tu Motocicleta</h3>
+                        <p>Obtén liquidez rápida. Evaluamos tu moto y te ofrecemos un pago ágil y seguro, sin riesgos y con transparencia total en el traspaso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRUEBA SOCIAL / TRANSPARENCIA EMPRESARIAL -->
+        <section class="container" style="margin-bottom: 80px;">
+            <div class="trust-section">
+                <h2>Nuestro Compromiso con Sogamoso</h2>
+                <p>
+                    En <strong>Compra Y Venta JHS</strong>, nuestra reputación se construye sobre la honestidad. Sabemos que comprar una moto es una inversión clave para el transporte y trabajo de muchas familias. No prometemos vehículos perfectos si son usados, pero sí garantizamos total claridad sobre su estado mecánico y legal antes de cerrar cualquier negocio.
+                </p>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE CONTACTO E INFO DE LA EMPRESA -->
+        <section id="contacto" class="section-pad">
+            <div class="container">
+                <h2 class="section-title">Contáctanos y <span>Haz Negocio</span></h2>
+                <div class="grid-2">
+                    
+                    <!-- Información Legal -->
+                    <div class="info-box">
+                        <h3 style="color: var(--primary-color); margin-bottom: 20px; font-size: 1.5rem;">Información del Establecimiento</h3>
+                        <p style="margin-bottom: 25px; color: var(--white);">Cumplimos con todas las normativas de comercio para brindarte seguridad.</p>
+                        <p><strong>Representante:</strong> NOELIA YASMIN PIRAGAUTA PRIETO</p>
+                        <p><strong>Razón Social:</strong> Compra Y Venta JHS</p>
+                        <p><strong>Dirección:</strong> Cl 7A # 27-82, Sogamoso, Colombia</p>
+                        <p><strong>Teléfono / Celular:</strong> 3012567389</p>
+                        <p><strong>Correo Electrónico:</strong> alysasok78@gmail.com</p>
+                        <p><strong>Horarios:</strong> Lunes a Domingo, 8:00 am - 5:00 pm</p>
+                    </div>
+
+                    <!-- Formulario Seguro -->
+                    <div class="form-box">
+                        <h3 style="margin-bottom: 20px; font-size: 1.5rem; color: var(--white);">Solicita Información</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="nombre">Nombre Completo *</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Andrés Ramírez">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono de Contacto *</label>
+                                <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 301 256 7389">
+                            </div>
+                            <div class="form-group">
+                                <label for="interes">¿En qué estás interesado? *</label>
+                                <select id="interes" name="interes" required>
+                                    <option value="" disabled selected>Selecciona una opción...</option>
+                                    <option value="comprar_nueva">Comprar moto nueva</option>
+                                    <option value="comprar_usada">Comprar moto usada</option>
+                                    <option value="vender_moto">Vender mi moto actual</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Detalles adicionales (Marca, Cilindraje, Año) *</label>
+                                <textarea id="mensaje" name="mensaje" rows="3" required placeholder="Escribe aquí los detalles..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-cta" style="width: 100%;">Enviar Solicitud</button>
+                        </form>
+                        
+                        <!-- Mensaje de éxito sin redirecciones extrañas -->
+                        <div id="formSuccess" class="success-message">
+                            ¡Gracias por tu mensaje! Hemos recibido tu solicitud correctamente. Un asesor de JHS te contactará muy pronto.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="politica-de-privacidad.html">Política de Privacidad</a>
+                <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+            </div>
+            <p class="footer-copy">
+                &copy; 2024 Compra Y Venta JHS. Propiedad de NOELIA YASMIN PIRAGAUTA PRIETO. Todos los derechos reservados.<br>
+                Cl 7A # 27-82, Sogamoso, Colombia.
+            </p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DE VALIDACIÓN BÁSICA -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Previene la recarga de la página y redirecciones
+            
+            // Oculta el formulario y muestra el mensaje de éxito (Mejora la experiencia de usuario y cumple con Ads)
+            this.style.display = 'none';
+            document.getElementById('formSuccess').style.display = 'block';
+            
+            // Aquí puedes conectar el formulario a tu servidor o servicio de webhook
+        });
+    </script>
+</body>
+</html>
